@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="./signup.js" defer>
+    </script>
+</head>
+
+<body>
+    <form id="signup-form">
+        <h1>Sign Up</h1>
+        <label for="fname">
+            <span>First Name <sup>*</sup></span>
+            <input type="text" placeholder="first name" name="fname" id="fname">
+        </label>
+        <label for="lname">
+            <span>Last Name <sup>*</sup></span>
+            <input type="text" name="lname" id="lname" placeholder="last name">
+        </label>
+        <label for="email">
+            <span>Email <sup>*</sup></span>
+            <input type="email" name="email" id="email" placeholder="email">
+        </label>
+        <label for="password">
+            <span>Password <sup>*</sup></span>
+            <input type="password" name="password" id="password" placeholder="password">
+            <div id="message"></div>
+        </label>
+        <label for="cpassword">
+            <span>Confirm Password <sup>*</sup></span>
+            <input type="password" name="cpassword" id="cpassword" placeholder="confirm password">
+            <div id="confirm-message"></div>
+        </label>
+        <input type="submit" value="Sign Up" id="signup">
+        <p>Already a member? <a href="./signin.html">Log In</a></p>
+    </form>
+</body>
+
+</html>

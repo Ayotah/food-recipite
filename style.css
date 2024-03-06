@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+ text-decoration: none;
+  font-family: 'Caveat', 
+}
+
+header{
+    height: 40vh;
+    background: url(./images/pexels-jer-chung-2059151.jpg), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    width: 100%;
+    /* position: fixed; */
+    /* overflow: hidden; */
+}
+/* Nav */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 15px;
+    
+}
+/* .logo{
+   font-size: 25px;
+   color: rgb(247, 11, 50);
+   position: absolute;
+   top: 0;
+   left: 0;
+   
+} */
+ .button{
+    margin-top: 5px;
+    padding: .2rem 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    background-color: #2e1c97b3;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    white-space: nowrap;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 2%;
+}
+
+ .button:hover{
+    transform: scale(1.06);
+    opacity: 1;
+    background-color: #2e1c97;
+}
+
+
+header form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+
+.search-bar{
+    width: 70%;
+    max-width: 600px;
+    padding: 1.2rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    font-size: 20px;
+}
+
+
+.cats{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 100%;
+    gap: 1rem;
+    padding: 1rem;
+    color: #2e1c97;
+    font-size: 1.2rem;
+}
+.cats>*{
+    padding: .5rem 1rem;
+    background-color: #fff;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.cat:hover{
+    transform: scale(1.06);
+    opacity: 1;
+}
+
+.products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.product{
+    border: 1px solid #979696;
+    border-radius: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    width: fit-content;
+    padding: .4rem;
+   
+    gap: 4px;
+}
+
+.product img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: inherit;
+    border-radius: 50%;
+    border: 1px solid rgb(25, 25, 25);
+}
+
+.buy-btn{
+    padding: .5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    background-color: #2e1c97b3;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.buy-btn:hover{
+    background-color: #2e1c97;
+    transform: scale(1.05);
+}
